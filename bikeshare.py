@@ -2,9 +2,11 @@ import time
 import pandas as pd
 import numpy as np
 
-CITY_DATA = { 'chicago': 'chicago.csv',
-              'new york city': 'new_york_city.csv',
-              'washington': 'washington.csv' }
+CITY_DATA = {
+    'chicago': 'chicago.csv',
+    'new york city': 'new_york_city.csv',
+    'washington': 'washington.csv'
+}
 
 def get_filters():
     """
@@ -119,6 +121,7 @@ def user_stats(df):
 
 
 def main():
+"""Run the bikeshare analysis program until the user chooses to stop."""
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
@@ -128,7 +131,8 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = input('\nWould you like to restart the program? Enter yes or no.\n')
+
         if restart.lower() != 'yes':
             break
 
