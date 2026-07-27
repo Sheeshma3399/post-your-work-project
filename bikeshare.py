@@ -121,7 +121,7 @@ def user_stats(df):
 
 
 def main():
-"""Run the bikeshare analysis program until the user chooses to stop."""
+    """Run the bikeshare analysis program until the user chooses to stop.."""
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
