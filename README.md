@@ -1,17 +1,11 @@
-# Bikeshare Project
+## Credits
 
-This project analyzes bikeshare data for three US cities: Chicago, New York City, and Washington. The program allows the user to explore the data by applying filters for city, month, and day of the week.
+This project was completed as part of the Udacity Introduction to Version Control course.
 
-The script displays useful statistics such as:
-- the most common times of travel
-- the most popular stations and trips
-- total and average trip duration
-- user information
+## Date Created
 
-## How to Run
+July 27, 2026
 
-Make sure Python is installed on your computer. Then run the following command in the terminal:
+## Author
 
-```bash
-python bikeshare.py
-
+Sheeshma
